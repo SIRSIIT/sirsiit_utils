@@ -106,9 +106,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+  INCLUDE_DIRS include
 #  LIBRARIES sirsiit_utils
-#  CATKIN_DEPENDS dynamic_reconfigure geometry_msgs roscpp rospy std_msgs tf tf2 tf2_ros tf_conversions
+  CATKIN_DEPENDS dynamic_reconfigure geometry_msgs roscpp rospy std_msgs tf tf2 tf2_ros tf_conversions
 #  DEPENDS system_lib
 )
 
@@ -121,6 +121,7 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  include
 )
 
 ## Declare a C++ library
