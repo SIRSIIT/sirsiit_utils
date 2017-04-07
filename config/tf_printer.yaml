@@ -1,0 +1,12 @@
+tfprint:
+  file_prefix: 'jsjb'
+  base_frame: 'base_link'
+  poses: ['/ur5/ee_pose','/box_pose_markers']
+  wrenches: ['/ur5/ee_force']
+  transforms: ['edge_1', 'edge_2', 'wall_1','object','camera_rgb_optical_frame']
+  others: 
+    [{topic: '/qb_class/hand_ref', type: 'handRef', field: '.closure'},
+    {topic: '/poses_boxes', type: 'PoseArray', field: '.poses'},
+    {topic: '/ur5/joint_states', type: 'JointState', field: '.position'},
+    {topic: '/box_w_dim', type: 'ClusterBoundingBox', field: '.dimensions'}]
+     
