@@ -1,4 +1,4 @@
-#ifndef INCLUDE_SOMA_LP_FILTER_H_
+    #ifndef INCLUDE_SOMA_LP_FILTER_H_
 #define INCLUDE_SOMA_LP_FILTER_H_
 
 #include <vector>
